@@ -6,6 +6,8 @@ void mainMenu();
 
 int main()
 {
+    Genre muLibrary;
+    muLibrary.initializeLibrary("mu.txt");
     string option = " ";
     while(option!="8"){
         option.erase();
@@ -19,12 +21,30 @@ int main()
             invalid++;
         }
         if(option=="1"){
+            cout<<"Why hello! I hope you are having a gr8 day m8! We have devised a flawless algorithm to determine your taste!"<<endl;
+            cout<<"I am going to ask you to enter you three favorite bands, and your three favorite albums!"<<endl;
+
         }
         else if(option=="2"){
         }
-        else if(option=="3"){
+        if(option=="3"){
+            string artist, album, genre, rating;
+            int ratingInt;
+            cout<<"Okay. Cool. Well first off, what band/artist are you adding?"<<endl;
+            getline(cin,artist);
+            cout<<"What is the album you want to put in?"<<endl;
+            getline(cin,album);
+            cout<<"Cool, cool. Our system is #/100 for ratings. Go to pitchfork, get that rating, and multiply it by 10 to get rid of that decimal."<<endl;
+            getline(cin,rating);
+            ratingInt=atoi(rating.c_str());
+            cout<<"Last question, pick a genre, be specific. Either pick from this list, or if none fit, include another."<<endl;
+            muLibrary.printGenres();
+            getline(cin,genre);
+            muLibrary.addAlbumNode(artist,album,ratingInt,genre);
+            cout<<"k"<<endl;
         }
         else if(option=="4"){
+            muLibrary.printLibrary();
         }
         else if(option=="5"){
         }
@@ -41,9 +61,6 @@ void mainMenu(){
     cout<<"1. R8 my taste!"<<endl;
     cout<<"2. Recommend me some tunes pls"<<endl;
     cout<<"3. Add music to the library"<<endl;
-    cout<<"4. Delete some pleb tier shit"<<endl;
-    cout<<"5. Add user"<<endl;
-    cout<<"6. Delete your shit account and shit taste"<<endl;
-    cout<<"7. Top 3 true patricians lmao ayyy"<<endl;
-    cout<<"8. GET OFF THE FUCKING BOARD"<<endl;
+    cout<<"4. View the /mu/ library"<<endl;
+    cout<<"5. GET OFF THE FUCKING BOARD"<<endl;
 }

@@ -1,225 +1,226 @@
 artist@album@rating@genre
-Death Grips@The Money Store@8.7@Experimental Hip-Hop
-Iceage@You're Nothing@8.6@Post Rock
-Deafheaven@Sunbather@8.9@Black Metal
-Sun Kil Moon@Benji@9.1@Folk
-Danny Brown@Old@8.7@Rap
-Speedy Ortiz@Foil Deer@7.9@Indie Rock
-Tyler, the Creator@Cherry Bomb@6.7@Rap
-Sonic Youth@Bad Moon Rising@8.1@Experimental Rock
-Planning For Burial@Desideratum@7.9@Gloom
-Death Grips@Exmilitary@7.5@Experimental Hip-Hop
-Death Grips@NO LOVE DEEP LOVE@8.2@Experimental Hip-Hop
-Death Grips@Jenny Death@8.1@Experimental Hip-Hop
-Death Grips@Fashion Week@6.6@Experimental Hip-Hop
-Death Grips@Niggas on the Moon@6.7@Experimental Hip-Hop
-Death Grips@Government Plates@8.4@Experimental Hip-Hop
-Tyler, the Creator@Goblin@8.0@Rap
-Tyler, the Creator@Wolf@7.8@Rap
-Earl Sweatshirt@Doris@8.3@Rap
-Earl Sweatshirt@I Don't Like Shit, I Don't Go Outside@8.0@Rap
-Modest Mouse@Night on the Sun EP@8.7@Alternative Rock
-Modest Mouse@Building Nothing Out of Something@8.9@Alternative Rock
-Modest Mouse@The Moon & Antarctica@9.8@Alternative Rock
-Modest Mouse@Sad Sappy Sucker@7.0@Alternative Rock
-Modest Mouse@We Were Dead Before the Ship Even Sank@7.8@Alternative Rock
-Modest Mouse@Good News for People Who Love Bad News@7.9@Alternative Rock
-Modest Mouse@Everywhere and His Nasty Parlour Tricks@7.8@Alternative Rock
-Modest Mouse@No One's First and You're Next@7.2@Alternative Rock
-Modest Mouse@Strangers to Ourselves@6.4@Alternative Rock
-Modest Mouse@This is a Long Drive for Someone With Nothing to Think About@8.5@Alternative Rock
-Modest Mouse@The Lonesome Crowded West@10.0@Alternative Rock
-Radiohead@In Rainbows@9.3@Alternative Rock
-Radiohead@Hail to the Thief@9.3@Alternative Rock
-Radiohead@Pablo Honey@5.5@Alternative Rock
-Radiohead@OK Computer@10.0@Alternative Rock
-Radiohead@The Bends@10.0@Alternative Rock
-Radiohead@Kid A@10.0@Alternative Rock
-Radiohead@Amnesiac@9.5@Alternative Rock
-Radiohead@The King of Limbs@7.9@Alternative Rock
-Interpol@El Pintor@5.9@Post-Punk
-Interpol@Antics@8.5@Post-Punk
-Interpol@Turn on the Bright Lights@9.5@Post-Punk
-Interpol@Interpol@4.6@Post-Punk
-Interpol@Our Love to Admire@6.0@Post-Punk
-Bosse-de-Nage@III@7.9@Black Metal
-Bloc Party@Silent Alarm@8.9@Indie Pop
-Crystal Castles@Crystal Castles@7.8@Electronica
-Crystal Castles@II@8.5@Electronica
-Crystal Castles@III@8.0@Electronica
-Viet Cong@Viet Cong@8.5@Post-Punk
-Sonic Youth@Daydream Nation@10.0@Experimental Rock
-Sonic Youth@The Eternal@6.8@Experimental Rock
-Sonic Youth@Rather Ripped@7.5@Experimental Rock
-Sonic Youth@Dirty@8.6@Experimental Rock
-Sonic Youth@Sonic Nurse@8.5@Experimental Rock
-Sonic Nurse@Goo@8.5@Experimental Rock
-The Mountain Goats@Beat the Champ@6.6@Folk
-The Mountain Goats@All Hail West Texas@9.0@Folk
-The Mountain Goats@Transcendental Youth@7.8@Folk
-The Mountain Goats@All Eternals Deck@8.1@Folk
-The Mountain Goats@The Life of the World to Come@8.4@Folk
-The Mountain Goats@Heretic Pride@8.0@Folk
-The Mountain Goats@Get Lonely@7.6@Folk
-The Mountain Goats@Tallahassee@6.7@Folk
-The Mountain Goats@The Sunset Tree@7.2@Folk
-Godspeed You! Black Emperor@F#A# Infinity@8.3@Post-Rock
-Godspeed You! Black Emperor@Asunder, Sweet and Other Distress@7.6@Post-Rock
-Godspeed You! Black Emperor@Allelujah! Don't Bend! Ascend!@9.3@Post-Rock
-Godspeed You! Black Emperor@Yanqui U.X.O.@5.0@Post-Rock
-Godspeed You! Black Emperor@5.6@Post-Rock
-Godspeed You! Black Emperor@Lift Your Skinny Fists like Antennas to Heaven@9.0@Post-Rock
-Slint@Spiderland@10.0@Post-Rock
-Young Fathers@White Men Are Black Men Too@6.8@Hip_Hop
-Whirr@Sway@6.9@Shoegaze
-Whirr@Pipe Dreams@7.5@Shoegaze
-Joy Division@Unknown Pleasures@10.0@Post-Punk
-Joy Division@Closer@10.0@Post-Punk
-American Football@American Football@8.6@Emo
-My Bloody Valentine@mbv@9.1@Shoegaze
-My Bloody Valentine@Loveless@10.0@Shoegaze
-My Bloody Valentine@Isn't Anything@10.0@Shoegaze
-Fleet Foxes@Helplessness Blues@8.8@Folk
-Fleet Foxes@Fleet Foxes@9.0@Folk
-Fleet Foxes@Giant Sun EP@8.7@Folk
-Kanye West@My Beautiful Dark Twisted Fantasy@10.0@Hip-Hop
-Kanye West@Yeezus@9.5@Hip-Hop
-Kanye West@The College Dropout@8.2@Hip-Hop
-Kanye West@Graduation@8.7@Hip-Hop
-Animal Collective@Merriweather Post Pavilion@9.6@Electronica
-Animal Collective@Strawberry Jam@9.3@Electronica
-Animal Collective@Feels@9.0@Electronica
-Animal Collective@Centipede Hz@7.4@Electronica
-Andrew Bird@Break It Yourself@7.5@Folk
-Beach House@Devotion@8.5@Dream Pop
-Beach House@Beach House@8.1@Dream Pop
-Beach House@Bloom@9.1@Dream Pop
-Beach House@Teen Dream@9.0@Dream Pop
-Beach Fossils@Beach Fossil@7.8@Surf Rock
-Beach Fossils@What a Pleasure EP@7.2Surf Rock
-Beach Fossils@Clash the Truth@5.8Surf Rock
-Best Coast@Crazy For You@8.4Surf Rock
-Best Coast@The Only Place@6.2Surf Rock
-The Black Keys@El Camino@7.4@Blues
-The Black Keys@Brothers@7.7@Blues
-The Black Keys@Attack & Release@7.5@Blues
-The Black Keys@Magic Potion@6.0@Blues
-The Black Keys@Rubber Factory@8.3@Blues
-The Black Keys@Thickfreakness@7.7@Blues
-Boards of Canada@Tomorrow's Harvest@8.3@Shoegaze
-Boards of Canada@Twoism@7.0@Shoegaze
-Boards of Canada@Music Has the Right to Children@10.0@Shoegaze
-Boards of Canada@Geogaddi@8.6@Shoegaze
-Brand New@Deja Entendu@6.9@Emo
-Built to Spill@You in Reverse@6.8@Alternative Rock
-Built to Spill@Keep it Like a Secret@9.3@Alternative Rock
-Built to Spill@Ancient Melodies of the Future@8.6@Alternative Rock
-Built to Spill@There Is No Enemy@7.9@Alternative Rock
-The Drums@Portamento@7.4@Surf Rock
-The Drums@Encyclopedia@5.9@Surf Rock
-The Drums@The Drums@7.5@Surf Rock
-Elliot Smith@New Moon@8.7@Emo
-Elliot Smith@Figure 8@6.9@Emo
-Father John Misty@Fear Fun@7.3@Folk
-Father John Misty@I Love You, Honeybear@8.8@Folk
-Have a Nice Life@The Unnatural World@7.8@Gloom
-Have a Nice Life@The Voids@8.0@Gloom
-Have a Nice Life@Deathconsciousness@10.0@Gloom
-Have a Nice Life@Time of Land@7.8@Gloom
-Giles Corey@Giles Corey@8.0@Gloom
-Planning For Burial@Leaving@10.0@Gloom
-Lightning Bolt@Fantasy Empire@8.0@Experimental Rock
-Lightning Bolt@Oblivion Hunter EP@7.4@Experimental Rock
-Lightning Bolt@Wonderful Rainbow@8.4@Experimental Rock
-Lightning Bolt@Ride the Skies@8.1@Experimental Rock
-Lightning Bolt@Hypermagic Mountain@7.3@Experimental Rock
-Wilco@Yankee Hotel Foxtrot@10.0@Alternative Rock
-Wilco@A Ghost Is Born@6.6@Alternative Rock
-Wilco@Sky Blue Sky@5.2@Alternative Rock
-Wilco@Wilco (The Album)@7.3@Alternative Rock
-Wilco@The Whole Love@6.9@Alternative Rock
-The Shins@Port of Morrow@8.4@Indie Rock
-The Shins@Wincing the Night Away@7.0@Indie Rock
-The Shins@Chutes Too Narrow@8.9@Indie Rock
-The Shins@Oh, Inverted World@8.0@Indie Rock
-Waxahatchee@Cerulean Salt@8.4@Indie Pop
-Waxahatchee@Ivy Tripp@8.1@Indie Pop
-The Velvet Underground@The Velvet Underground@10.0@Psychedelic Rock
-The Velvet Underground@White Light/White Heat@10.0@Psychedelic Rock
-The Velvet Underground@The Velvet Underground & Nico@9.0@Psychedelic Rock
-The Velvet Underground@Gold@9.3@Psychedelic Rock
-Bon Iver@For Emma, Forever Ago@8.1@Folk
-Bon Iver@Bon Iver@9.5@Folk
-Dinosaur Jr.@You're Living All Over Me@9.3@Alternative Rock
-Dinosaur Jr.@Farm@8.5@Alternative Rock
-Dinosaur Jr.@I Bet on Sky@7.9@Alternative Rock
-Dinosaur Jr.@Beyond@8.4@Alternative Rock
-Flying Lotus@You're Dead!@8.3@Hip-Hop
-Flying Lotus@Cosmogramma@8.8@Hip-Hop
-Flying Lotus@Los Angeles@8.5@Hip-Hop
-Frank Ocean@Nostalgia, Ultra.@7.8@Soul
-Frank Ocean@Channel Ocean@9.5@Soul
-Foxygen@...And Star Power@7.0@Psychedelic Rock
-Foxygen@We Are the 21st Century Ambassadors of Peace & Magic@8.4@Psychedelic Rock
-Foxygen@Take The Kids Off Broadway@7.9@Psychedelic Rock
-Future Islands@In Evening Air@7.6@Dream Pop
-Future Islands@Singles@8.0@Dream Pop
-Future Islands@On the Water@7.8@Dream Pop
-Grimes@Visions@8.5@Dream Pop
-Grimes@Geidi Primes@7.5@Dream Pop
-The Jesus and Mary Chain@Psychocandy@9.6@Psychedelic Rock
-The Jesus and Mary Chain@Darklands@7.8@Psychedelic Rock
-The Jesus and Mary Chain@Automatic@7.8@Psychedelic Rock
-The Jesus and Mary Chain@Stoned & Dethroned@7.6@Psychedelic Rock
-The Joy Formidable@The Big Roar@6.8@Indie Pop
-The Joy Formidable@A Balloon Called Moaning@6.7@Indie Pop
-The Joy Formidable@Wolf's Law@7.2@Indie Pop
-Kendrick Lamar@Section.80@8.0@Rap
-Kendrick Lamar@To Pimp a Butterfly@9.3@Rap
-Kendrick Lamar@good kid, m.A.A.d city@9.5@Rap
-Local Natives@Gorilla Manor@8.4@Indie Rock
-Local Natives@Hummingbird@8.1@Indie Rock
-Mazzy Star@Seasons of Your Day@7.8@Dream Pop
-Megadeth@Peace Sells... But Who's Buying?@8.7@Trash Metal
-Megadeth@Rust in Peace@9.0@Trash Metal
-Muse@The 2nd Law@5.5@Alternative Rock
-Muse@The Resistance@5.9@Alternative Rock
-Muse@Black Holes and Revelations@4.9@Alternative Rock
-Nas@Illmatic@10.0@Rap
-The National@High Violet@8.7@Alternative Rock
-The National@Alligator@7.9@Alternative Rock
-The National@Boxer@8.6@Alternative Rock
-The National@Trouble Will Find Me@8.4@Alternative Rock
-Neutral Milk Hotel@In the Aeroplane Over the Sea@10.0@Indie Rock
-New Order@Movement@9.3@Post-Punk
-Now, Now@Threads@7.5@Indie Pop
-Trash Talk@No Peace@7.7@Trash Metal
-Odd Future@The OF Tape Vol. 2@7.5@Rap
-Domo Genesis / The Alchemist@No Idols@7.4@Rap
-Trash Talk@119@7.4@Thrash Metal
-The Jet Age of Tomorrow@The Jellyfish Mentality@6.6@Hip-Hop
-Parquet Courts@Sunbathing Animal@8.6@Post-Punk
-Parquet Courts@Light Up Gold@8.0@Post-Punk
-N.E.R.D.@In Search of...@6.0@Hip-Hop
-Queens of the Stone Age@Era Vulgaris@6.2@Alternative Rock
-Queens of the Stone Age@Songs for the Deaf@7.9@Alternative Rock
-Queens of the Stone Age@Like Clockwork@7.3@Alternative Rock
-Queens of the Stone Age@Rated R@8.6@Alternative Rock
-Alt-J@An Awesome Wave@4.8@Indie Pop
-Alt-J@This Is All Yours@4.0@Indie Pop
-Sun O)))@Monoliths & Dimensions@8.5@Drone
-Sun O)))@Oracle EP@7.8@Drone
-Sun O)))@Black One@8.9@Drone
-Swans@To Be Kind@9.2@Experimental Rock
-Swans@The Seer@9.0@Experimental Rock
-Swans@We Rose From Your Bed With the Sun in Our Head@8.0@Experimental Rock
-Swans@Not Here/Not Now@8.2@Experimental Rock
-Swans@Public Castration is a Good Idea@6.0@Experimental Rock
-Swans@Children of God@7.0@Experimental Rock
-Swans@My Father Will Guide Me Up a Rope to the Sky@7.7@Experimental Rock
-Tame Impala@Innerspeaker@8.5@Psychedelic Rock
-Tame Impala@Lonerism@9.0@Psychedelic Rock
-Twenty One Pilots@Vessel@3.3@Indie Pop
-Mac DeMarco@Salad Days@8.5@Post-Punk
-Mac DeMarco@Rock and Roll Night Club EP@7.2@Post-Punk
-Mac DeMarco@2@8.2@Post-Punk
+Modest Mouse@Night on the Sun EP@87@Alternative Rock
+Death Grips@The Money Store@87@Experimental Hip Hop
+Iceage@You're Nothing@86@Post Rock
+Deafheaven@Sunbather@89@Black Metal
+Sun Kil Moon@Benji@91@Folk
+Danny Brown@Old@87@Rap
+Speedy Ortiz@Foil Deer@79@Indie Rock
+Tyler, the Creator@Cherry Bomb@67@Rap
+Sonic Youth@Bad Moon Rising@81@Experimental Rock
+Planning For Burial@Desideratum@79@Gloom
+Death Grips@Exmilitary@75@Experimental Hip Hop
+Death Grips@NO LOVE DEEP WEB@82@Experimental Hip Hop
+Death Grips@Jenny Death@81@Experimental Hip Hop
+Death Grips@Fashion Week@66@Experimental Hip Hop
+Death Grips@Niggas on the Moon@67@Experimental Hip Hop
+Death Grips@Government Plates@84@Experimental Hip Hop
+Tyler, the Creator@Goblin@80@Rap
+Tyler, the Creator@Wolf@78@Rap
+Earl Sweatshirt@Doris@83@Rap
+Earl Sweatshirt@I Don't Like Shit, I Don't Go Outside@80@Rap
+Modest Mouse@Building Nothing Out of Something@89@Alternative Rock
+Modest Mouse@The Moon & Antarctica@98@Alternative Rock
+Modest Mouse@Sad Sappy Sucker@72@Alternative Rock
+Modest Mouse@The Fruit that Ate Itself EP@78@Alternative Rock
+Modest Mouse@We Were Dead Before the Ship Even Sank@78@Alternative Rock
+Modest Mouse@Good News for People Who Love Bad News@79@Alternative Rock
+Modest Mouse@Everywhere and His Nasty Parlour Tricks@78@Alternative Rock
+Modest Mouse@No One's First and You're Next@72@Alternative Rock
+Modest Mouse@Strangers to Ourselves@64@Alternative Rock
+Modest Mouse@This is a Long Drive for Someone With Nothing to Think About@85@Alternative Rock
+Modest Mouse@The Lonesome Crowded West@100@Alternative Rock
+Radiohead@In Rainbows@93@Alternative Rock
+Radiohead@Hail to the Thief@93@Alternative Rock
+Radiohead@Pablo Honey@55@Alternative Rock
+Radiohead@OK Computer@100@Alternative Rock
+Radiohead@The Bends@100@Alternative Rock
+Radiohead@Kid A@100@Alternative Rock
+Radiohead@Amnesiac@95@Alternative Rock
+Radiohead@The King of Limbs@79@Alternative Rock
+Interpol@El Pintor@59@Post Punk
+Interpol@Antics@85@Post Punk
+Interpol@Turn on the Bright Lights@95@Post Punk
+Interpol@Interpol@46@Post Punk
+Interpol@Our Love to Admire@60@Post Punk
+Bosse-de-Nage@III@79@Black Metal
+Bloc Party@Silent Alarm@89@Indie Pop
+Crystal Castles@Crystal Castles@78@Electronica
+Crystal Castles@II@85@Electronica
+Crystal Castles@III@80@Electronica
+Viet Cong@Viet Cong@85@Post Punk
+Sonic Youth@Daydream Nation@100@Experimental Rock
+Sonic Youth@The Eternal@68@Experimental Rock
+Sonic Youth@Rather Ripped@75@Experimental Rock
+Sonic Youth@Dirty@86@Experimental Rock
+Sonic Youth@Sonic Nurse@85@Experimental Rock
+Sonic Nurse@Goo@85@Experimental Rock
+The Mountain Goats@Beat the Champ@66@Folk
+The Mountain Goats@All Hail West Texas@90@Folk
+The Mountain Goats@Transcendental Youth@78@Folk
+The Mountain Goats@All Eternals Deck@81@Folk
+The Mountain Goats@The Life of the World to Come@84@Folk
+The Mountain Goats@Heretic Pride@80@Folk
+The Mountain Goats@Get Lonely@76@Folk
+The Mountain Goats@Tallahassee@67@Folk
+The Mountain Goats@The Sunset Tree@72@Folk
+Godspeed You! Black Emperor@F#A# Infinity@83@Post Rock
+Godspeed You! Black Emperor@Asunder, Sweet and Other Distress@76@Post Rock
+Godspeed You! Black Emperor@Allelujah! Don't Bend! Ascend!@93@Post Rock
+Godspeed You! Black Emperor@Yanqui U.X.O.@50@Post Rock
+Godspeed You! Black Emperor@Moya@100@Post Rock
+Godspeed You! Black Emperor@Lift Your Skinny Fists like Antennas to Heaven@90@Post Rock
+Slint@Spiderland@100@Post Rock
+Young Fathers@White Men Are Black Men Too@68@Hip Hop
+Whirr@Sway@69@Shoegaze
+Whirr@Pipe Dreams@75@Shoegaze
+Joy Division@Unknown Pleasures@100@Post Punk
+Joy Division@Closer@100@Post Punk
+American Football@American Football@86@Emo
+My Bloody Valentine@mbv@91@Shoegaze
+My Bloody Valentine@Loveless@100@Shoegaze
+My Bloody Valentine@Isn't Anything@100@Shoegaze
+Fleet Foxes@Helplessness Blues@88@Folk
+Fleet Foxes@Fleet Foxes@90@Folk
+Fleet Foxes@Giant Sun EP@87@Folk
+Kanye West@My Beautiful Dark Twisted Fantasy@100@Hip Hop
+Kanye West@Yeezus@95@Hip Hop
+Kanye West@The College Dropout@82@Hip Hop
+Kanye West@Graduation@87@Hip Hop
+Animal Collective@Merriweather Post Pavilion@96@Electronica
+Animal Collective@Strawberry Jam@93@Electronica
+Animal Collective@Feels@90@Electronica
+Animal Collective@Centipede Hz@74@Electronica
+Andrew Bird@Break It Yourself@75@Folk
+Beach House@Devotion@85@Dream Pop
+Beach House@Beach House@81@Dream Pop
+Beach House@Bloom@91@Dream Pop
+Beach House@Teen Dream@90@Dream Pop
+Beach Fossils@Beach Fossils@78@Surf Rock
+Beach Fossils@What a Pleasure EP@72Surf Rock
+Beach Fossils@Clash the Truth@58Surf Rock
+Best Coast@Crazy For You@84Surf Rock
+Best Coast@The Only Place@62Surf Rock
+The Black Keys@El Camino@74@Indie Rock
+The Black Keys@Brothers@77@Indie Rock
+The Black Keys@Attack & Release@75@Indie Rock
+The Black Keys@Magic Potion@60@Indie Rock
+The Black Keys@Rubber Factory@83@Indie Rock
+The Black Keys@Thickfreakness@77@Indie Rock
+Boards of Canada@Tomorrow's Harvest@83@Shoegaze
+Boards of Canada@Twoism@70@Shoegaze
+Boards of Canada@Music Has the Right to Children@100@Shoegaze
+Boards of Canada@Geogaddi@86@Shoegaze
+Brand New@Deja Entendu@69@Emo
+Built to Spill@You in Reverse@68@Alternative Rock
+Built to Spill@Keep it Like a Secret@93@Alternative Rock
+Built to Spill@Ancient Melodies of the Future@86@Alternative Rock
+Built to Spill@There Is No Enemy@79@Alternative Rock
+The Drums@Portamento@74@Surf Rock
+The Drums@Encyclopedia@59@Surf Rock
+The Drums@The Drums@75@Surf Rock
+Elliot Smith@New Moon@87@Emo
+Elliot Smith@Figure 8@69@Emo
+Father John Misty@Fear Fun@73@Folk
+Father John Misty@I Love You, Honeybear@88@Folk
+Have a Nice Life@The Unnatural World@78@Gloom
+Have a Nice Life@The Voids@80@Gloom
+Have a Nice Life@Deathconsciousness@100@Gloom
+Have a Nice Life@Time of Land@78@Gloom
+Giles Corey@Giles Corey@80@Gloom
+Planning For Burial@Leaving@100@Gloom
+Lightning Bolt@Fantasy Empire@80@Experimental Rock
+Lightning Bolt@Oblivion Hunter EP@74@Experimental Rock
+Lightning Bolt@Wonderful Rainbow@84@Experimental Rock
+Lightning Bolt@Ride the Skies@81@Experimental Rock
+Lightning Bolt@Hypermagic Mountain@73@Experimental Rock
+Wilco@Yankee Hotel Foxtrot@100@Alternative Rock
+Wilco@A Ghost Is Born@66@Alternative Rock
+Wilco@Sky Blue Sky@52@Alternative Rock
+Wilco@Wilco (The Album)@73@Alternative Rock
+Wilco@The Whole Love@69@Alternative Rock
+The Shins@Port of Morrow@84@Indie Rock
+The Shins@Wincing the Night Away@70@Indie Rock
+The Shins@Chutes Too Narrow@89@Indie Rock
+The Shins@Oh, Inverted World@80@Indie Rock
+Waxahatchee@Cerulean Salt@84@Indie Pop
+Waxahatchee@Ivy Tripp@81@Indie Pop
+The Velvet Underground@The Velvet Underground@100@Psychedelic Rock
+The Velvet Underground@White Light/White Heat@100@Psychedelic Rock
+The Velvet Underground@The Velvet Underground & Nico@90@Psychedelic Rock
+The Velvet Underground@Gold@93@Psychedelic Rock
+Bon Iver@For Emma, Forever Ago@81@Folk
+Bon Iver@Bon Iver@95@Folk
+Dinosaur Jr.@You're Living All Over Me@93@Alternative Rock
+Dinosaur Jr.@Farm@85@Alternative Rock
+Dinosaur Jr.@I Bet on Sky@79@Alternative Rock
+Dinosaur Jr.@Beyond@84@Alternative Rock
+Flying Lotus@You're Dead!@83@Hip Hop
+Flying Lotus@Cosmogramma@88@Hip Hop
+Flying Lotus@Los Angeles@85@Hip Hop
+Frank Ocean@Nostalgia, Ultra.@78@Hip Hop
+Frank Ocean@Channel Ocean@95@Hip Hop
+Foxygen@...And Star Power@70@Psychedelic Rock
+Foxygen@We Are the 21st Century Ambassadors of Peace & Magic@84@Psychedelic Rock
+Foxygen@Take The Kids Off Broadway@79@Psychedelic Rock
+Future Islands@In Evening Air@76@Dream Pop
+Future Islands@Singles@80@Dream Pop
+Future Islands@On the Water@78@Dream Pop
+Grimes@Visions@85@Dream Pop
+Grimes@Geidi Primes@7.@Dream Pop
+The Jesus and Mary Chain@Psychocandy@96@Psychedelic Rock
+The Jesus and Mary Chain@Darklands@78@Psychedelic Rock
+The Jesus and Mary Chain@Automatic@78@Psychedelic Rock
+The Jesus and Mary Chain@Stoned & Dethroned@76@Psychedelic Rock
+The Joy Formidable@The Big Roar@68@Indie Pop
+The Joy Formidable@A Balloon Called Moaning@67@Indie Pop
+The Joy Formidable@Wolf's Law@72@Indie Pop
+Kendrick Lamar@Section.80@80@Rap
+Kendrick Lamar@To Pimp a Butterfly@93@Rap
+Kendrick Lamar@good kid, m.A.A.d city@95@Rap
+Local Natives@Gorilla Manor@84@Indie Rock
+Local Natives@Hummingbird@81@Indie Rock
+Mazzy Star@Seasons of Your Day@78@Dream Pop
+Megadeth@Peace Sells... But Who's Buying?@87@Thrash Metal
+Megadeth@Rust in Peace@90@Thrash Metal
+Muse@The 2nd Law@55@Alternative Rock
+Muse@The Resistance@59@Alternative Rock
+Muse@Black Holes and Revelations@49@Alternative Rock
+Nas@Illmatic@100@Rap
+The National@High Violet@87@Alternative Rock
+The National@Alligator@79@Alternative Rock
+The National@Boxer@86@Alternative Rock
+The National@Trouble Will Find Me@84@Alternative Rock
+Neutral Milk Hotel@In the Aeroplane Over the Sea@100@Indie Rock
+New Order@Movement@93@Post Punk
+Now, Now@Threads@75@Indie Pop
+Trash Talk@No Peace@77@Thrash Metal
+Odd Future@The OF Tape Vol. 2@75@Rap
+Domo Genesis / The Alchemist@No Idols@74@Rap
+Trash Talk@119@74@Thrash Metal
+The Jet Age of Tomorrow@The Jellyfish Mentality@66@Hip Hop
+Parquet Courts@Sunbathing Animal@86@Post Punk
+Parquet Courts@Light Up Gold@80@Post Punk
+N.E.R.D.@In Search of...@60@Hip Hop
+Queens of the Stone Age@Era Vulgaris@62@Alternative Rock
+Queens of the Stone Age@Songs for the Deaf@79@Alternative Rock
+Queens of the Stone Age@Like Clockwork@73@Alternative Rock
+Queens of the Stone Age@Rated R@86@Alternative Rock
+Alt-J@An Awesome Wave@48@Indie Pop
+Alt-J@This Is All Yours@40@Indie Pop
+Sun O)))@Monoliths & Dimensions@85@Drone
+Sun O)))@Oracle EP@78@Drone
+Sun O)))@Black One@89@Drone
+Swans@To Be Kind@92@Experimental Rock
+Swans@The Seer@90@Experimental Rock
+Swans@We Rose From Your Bed With the Sun in Our Head@80@Experimental Rock
+Swans@Not Here/Not Now@82@Experimental Rock
+Swans@Public Castration is a Good Idea@60@Experimental Rock
+Swans@Children of God@70@Experimental Rock
+Swans@My Father Will Guide Me Up a Rope to the Sky@77@Experimental Rock
+Tame Impala@Innerspeaker@85@Psychedelic Rock
+Tame Impala@Lonerism@90@Psychedelic Rock
+Twenty One Pilots@Vessel@33@Indie Pop
+Mac DeMarco@Salad Days@85@Post Punk
+Mac DeMarco@Rock and Roll Night Club EP@72@Post Punk
+Mac DeMarco@2@82@Post Punk
