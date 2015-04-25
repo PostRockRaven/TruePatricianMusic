@@ -21,8 +21,26 @@ int main()
             invalid++;
         }
         if(option=="1"){
+            string album1, album2, album3;
+            int ratingTotal = 0;
             cout<<"Why hello! I hope you are having a gr8 day m8! We have devised a flawless algorithm to determine your taste!"<<endl;
-            cout<<"I am going to ask you to enter you three favorite bands, and your three favorite albums!"<<endl;
+            cout<<"I am going to ask you to enter your three favorite albums!"<<endl;
+            cout<<"1st: ";
+            getline(cin,album1);
+            cout<<"2nd: ";
+            getline(cin,album2);
+            cout<<"3rd: ";
+            getline(cin,album3);
+            ratingTotal+=muLibrary.rateMyTaste(album1);
+            ratingTotal+=muLibrary.rateMyTaste(album2);
+            ratingTotal+=muLibrary.rateMyTaste(album3);
+            ratingTotal=ratingTotal/3;
+            if(ratingTotal>89){
+                cout<<"Congratulations on your true patrician taste!"<<endl;
+            }
+            else{
+                cout<<"REEEEEEEEE! I apologize, but you do not have true patrician taste. :c"<<endl;
+            }
 
         }
         else if(option=="2"){
@@ -53,14 +71,14 @@ int main()
         else if(option=="7"){
         }
     }
-    cout<<"Fuck off lol"<<endl;
+    cout<<"lol"<<endl;
 }
 
 void mainMenu(){
-    cout<<"======/mu/ menu, fuck you======="<<endl;
+    cout<<"======/mu/ menu lol======="<<endl;
     cout<<"1. R8 my taste!"<<endl;
     cout<<"2. Recommend me some tunes pls"<<endl;
     cout<<"3. Add music to the library"<<endl;
     cout<<"4. View the /mu/ library"<<endl;
-    cout<<"5. GET OFF THE FUCKING BOARD"<<endl;
+    cout<<"5. GET OFF THE BOARD"<<endl;
 }

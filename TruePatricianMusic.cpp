@@ -9,8 +9,7 @@
 using namespace std;
 
 Genre::Genre(){
-	nil = new Album();
-	nil->red = false;
+    nil = new Album();
 }
 
 Genre::~Genre(){
@@ -46,234 +45,159 @@ void Genre::initializeLibrary(std::string filename){
             }
             if(entries==1){
                 Album *newOne = new Album(artist,album,rating,genre);
-                newOne->parent=nil;
-                newOne->leftChild=nil;
-                newOne->rightChild=nil;
-                newOne->red=true;
-                library.push_back(*newOne);
+                newOne->next=nil;
+                newOne->previous=nil;
+                library.push_back(newOne);
             }
             if(entries>1){
-                for(int i=0;i<library.size();i++){
-                    if(library[i].genre==genre){
-                        addAlbumNode(artist,album,rating,genre);
-                        break;
-                    }
-                    else if(i==library.size()-1){
-                        Album *newOne = new Album(artist,album,rating,genre);
-                        newOne->parent=nil;
-                        newOne->leftChild=nil;
-                        newOne->rightChild=nil;
-                        newOne->red=true;
-                        library.push_back(*newOne);
-                        break;
-                    }
-                }
+                addAlbumNode(artist,album,rating,genre);
             }
         }
     }
-    sort(library.begin(),library.end());
-}
-
-void Genre::rbAddFixup(Album *node){
-	    Album *y;
-	    Album *root = getRoot(node->genre);
-	    while((node != root)&&(node->parent->red)){
-	        if(node->parent == node->parent->parent->leftChild){
-	            y = node->parent->parent->rightChild; // uncle
-	            if(y->red){
-	                node->parent->red = false; // set parent black
-	                y->red = false;            // set uncle black
-	                node->parent->parent->red = true; // set grandparent red
-	                node = node->parent->parent;  // set node to grandparent
-	            }
-	            else{
-	                if( node == node->parent->rightChild){
-	                    node = node->parent;   // set node to parent
-	                    leftRotate(node);      // left rotate
-	                }
-	                node->parent->red = false;   // set parent black
-	                node->parent->parent->red = true;   // set grandparent red
-	                rightRotate(node->parent->parent);    // right rotate grandparent
-	            }
-	        }
-	        else{
-	            y = node->parent->parent->leftChild;
-	            if(node->parent=nil){
-                    return;
-	            }
-                if(y->red){
-	                node->parent->red = false;  // set parent black
-	                y->red = false;             // set uncle black
-	                node->parent->parent->red = true;  // set grandparent red
-	                node = node->parent->parent;      // set node to grandparent
-	            }
-	            else{
-	                if(node == node->parent->leftChild){
-	                    node = node->parent;  // set node to parent
-	                    rightRotate(node);    // right rotate
-	                }
-	                node->parent->red = false;  // set parent black
-	                node->parent->parent->red = true; // set grandparent red
-	                leftRotate(node->parent->parent);  // left rotate
-	            }
-	        }
-	    }
-        for(int i=0; i<library.size(); i++){
-            if(node->genre==library[i].genre){
-                library[i].red=false;
-        }
-    }
-}
-
-void Genre::leftRotate(Album * x){
-	    Album *y;
-	    y = x->rightChild;
-	    x->rightChild = y->leftChild;  // y's left subtree becomes x's right subtree
-	    if (y->leftChild != nil) {
-	    	y->leftChild->parent = x;
-	    }
-	    y->parent = x->parent;      // y's new parent was x's parent
-	    if (x->parent == nil) {   // if not at root, set the parent to point to y instead of x
-        for(int i=0; i<library.size(); i++){
-            if(y->genre==library[i].genre){
-                library[i]=*y;
-            }
-        }
-	    } else if (x == x->parent->leftChild) {
-	    	x->parent->leftChild = y;     // x was on left of its parent
-	    } else {
-	    	x->parent->rightChild = y;    // x was on right of its parent
-	    }
-	    y->leftChild = x;          // put x on y's left
-	    x->parent = y;
-	}
-
-void Genre::rightRotate(Album *x) {
-	Album *y;
-	y = x->leftChild;
-	x->leftChild = y->rightChild;   // y's right subtree becomes x's left subtree
-    if (y->rightChild != nil) {
-    	y->rightChild->parent = x;
-    }
-    y->parent = x->parent;          // y's new parent was x's parent
-    if (x->parent == nil) {      // if not at root, set the parent to point to y instead of x
-        for(int i=0; i<library.size(); i++){
-            if(x->genre==library[i].genre){
-                library[i]=*y;
-            }
-        }
-    } else if (x == x->parent->leftChild) {
-    	x->parent->leftChild = y;     // x was on left of its parent
-    } else {
-    	x->parent->rightChild = y;    // x was on right of its parent
-    }
-    y->rightChild = x;            // put x on y's right
-    x->parent = y;
-}
-
-Album* Genre::findMin(Album* node){
-    while(node->leftChild != nil){
-        node = node->leftChild;
-    }
-    return node;
-}
-
-Album* Genre::searchAlbumTree(Album * node, int rating){
-    if (node == nil)
-        return nil;
-    else if (node->rating == rating)
-        return node;
-    else{
-        if(rating<node->rating)
-            return searchAlbumTree(node->leftChild,rating);
-
-        else
-            return searchAlbumTree(node->rightChild,rating);
-    }
+    infile.close();
+    /*sort(library.begin(),library.end(),[](const Album &a, const Album &b){
+         return((a.genre.compare(b.genre)==-1));
+    });*/
 }
 
 void Genre::addAlbumNode(std::string artist, std::string album, int rating, std::string genre){
-	Album *newNode = new Album(artist,album,rating,genre);
-	Album *temp=nil;
-	Album *parent=nil;
-	Album *root = getRoot(genre);
+	Album *newOne = new Album(artist,album,rating,genre);
+	int root=0;
+	Album *temp;
+	Album *temp2;
+    newOne->next=nil;
+    newOne->previous=nil;
 	for(int n=0; n<library.size(); n++){
-        if(library[n].genre == genre){
+        if(library[n]->genre == genre){
             break;
         }
         else if(n == library.size()-1){
-            Album *newOne = new Album(artist,album,rating,genre);
-            newOne->parent=nil;
-            newOne->leftChild=nil;
-            newOne->rightChild=nil;
-            newOne->red=true;
-            library.push_back(*newOne);
-            sort(library.begin(),library.end());
+            library.push_back(newOne);
             return;
         }
 	}
-	if (root == nil) { // add this movie as the root
-        cout<<"should not happen"<<endl;
-		newNode->leftChild=nil;
-		newNode->rightChild=nil;
-		newNode->parent=nil;
-        for(int i=0; i<library.size(); i++){
-            if(newNode->genre==library[i].genre){
-                library[i]=*newNode;
+    root=getRoot(genre);
+    temp=library[root];
+    if(rating>(library[root]->rating)){
+        newOne->band=library[root]->band;
+        newOne->album=library[root]->album;
+        newOne->rating=library[root]->rating;
+        newOne->genre=library[root]->genre;
+        library[root]->band=artist;
+        library[root]->album=album;
+        library[root]->rating=rating;
+        library[root]->genre=genre;
+        temp=library[root]->next;
+        library[root]->next=newOne;
+        newOne->previous=library[root];
+        newOne->next=temp;
+        temp->previous=newOne;
+        return;
+    }
+    else{
+        while(temp->next!=nil){
+            temp=temp->next;
+            if(rating>=(temp->rating)&&rating<(temp->previous->rating)){
+                newOne->band=temp->band;
+                newOne->album=temp->album;
+                newOne->rating=temp->rating;
+                newOne->genre=temp->genre;
+                temp->band=artist;
+                temp->album=album;
+                temp->rating=rating;
+                temp->genre=genre;
+                temp2=temp->next;
+                temp->next=newOne;
+                newOne->previous=temp;
+                newOne->next=temp2;
+                return;
             }
         }
-	} else {
-		temp = getRoot(genre);
-		while (temp != nil) { // keep traversing until hit a leaf
-            parent = temp;
-			if (rating>=temp->rating) {
-                 temp = temp->leftChild;
-			} else {
-                 temp = temp->rightChild;
-			}
-		}
-		newNode->leftChild=nil;
-		newNode->rightChild=nil;
-		newNode->parent = parent;  // update parent of new node
-		if (rating>=parent->rating) { // add new node as left or right child
-			parent->leftChild = newNode;
-		} else
-			parent->rightChild = newNode;
-	}
-    rbAddFixup(newNode);
-    return;
+        temp->next=newOne;
+        newOne->previous=temp;
+        return;
+    }
 }
 
-Album *Genre::getRoot(std::string genre){
+int Genre::getRoot(std::string genre){
     for(int i=0; i<library.size(); i++){
-        if(library[i].genre == genre)
-            return &library[i];
+        if(library[i]->genre == genre)
+            return i;
     }
 }
 
 void Genre::printLibrary(Album *node){
-    if(node->leftChild!=nil){
-        printLibrary(node->leftChild);
-    }
-    cout<<node->genre<<": "<<node->album<<" by "<<node->band<<" rated "<<node->rating<<endl;
-    if(node->rightChild!=nil){
-        printLibrary(node->rightChild);
+    while(node!=nil){
+        cout<<node->genre<<": "<<node->album<<" by "<<node->band<<" rated "<<node->rating<<endl;
+        node=node->next;
     }
 }
 
 void Genre::printLibrary(){
     for(int i=0; i<library.size(); i++){
-        printLibrary(&library[i]);
+        printLibrary(library[i]);
     }
 }
 
 void Genre::printGenres(){
     cout<<"Genres currently in the /mu/ library: ";
     for(int i=0; i<library.size(); i++){
-        cout<<library[i].genre;
+        cout<<library[i]->genre;
         if(i!=library.size()-1){
             cout<<", ";
         }
     }
     cout<<endl;
+}
+
+bool Genre::compare(std::string one, std::string two){
+    int same=0;
+    if(one.length()==two.length()){
+        for(int i=0; i<one.length(); i++){
+            if(one[i]==two[i] || (one[i]+32)==two[i] || (two[i]+32)==one[i]){
+                    same++;
+            }
+            else{
+                return false;
+            }
+        }
+        if(same==one.length()){
+            return true;
+        }
+    }
+    return false;
+}
+
+int Genre::rateMyTaste(std::string album){
+    Album *albumFind;
+    int rate;
+    for(int i=0; i<library.size(); i++){
+        albumFind=library[i];
+        while(albumFind!=nil){
+            if(compare(album,albumFind->album)){
+                rate=albumFind->rating;
+                return rate;
+            }
+            albumFind=albumFind->next;
+        }
+    }
+    notInLibrary();
+    return rateMyTaste(notInLibrary());
+}
+
+std::string Genre::notInLibrary(){
+    string artist, album, genre, rate;
+    int rating=0;
+    cout<<"Oh no! One of your favorite's cannot seem to be found. Pls add it!"<<endl;
+    cout<<"Artist: ";
+    getline(cin,artist);
+    cout<<"Album: ";
+    getline(cin,album);
+    cout<<"Rating (Remember # out of 100): ";
+    getline(cin,rate);
+    rating=atoi(rate.c_str());
+    printGenres();
+    getline(cin,genre);
+    addAlbumNode(artist,album,rating,genre);
+    return album;
 }

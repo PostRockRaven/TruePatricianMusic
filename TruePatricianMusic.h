@@ -10,10 +10,8 @@ struct Album{
     std::string genre;
     int rating;
 
-    bool red;
-    Album *parent;
-    Album *leftChild;
-    Album *rightChild;
+    Album *next = NULL;
+    Album *previous = NULL;
 
     Album(){};
 
@@ -22,17 +20,7 @@ struct Album{
         album = _album;
         rating = _rating;
         genre = _genre;
-        leftChild = NULL;
-    	rightChild = NULL;
-        parent = NULL;
-        red = true;
     }
-
-    bool operator<(const Album& other)const{
-    if(genre.compare(other.genre)<0)
-        return true;
-    else return false;};
-
 };
 
 class Genre{
@@ -43,17 +31,14 @@ class Genre{
         void printLibrary();
         void addAlbumNode(std::string artist, std::string album, int rating, std::string genre);
         void printGenres();
+        bool compare(std::string one, std::string two);
+        int rateMyTaste(std::string album);
+        std::string notInLibrary();
     protected:
     private:
-        void DeleteAll(Album * node); //use this for the post-order traversal deletion of the tree
-        void rbAddFixup(Album * node); // called after insert to fix tree
-        void leftRotate(Album * x);
-        void rightRotate(Album * x);
         void printLibrary(Album *node);
-        Album *findMin(Album* node);
-        Album *getRoot(std::string genre);
-        Album *searchAlbumTree(Album * node, int rating);
+        int getRoot(std::string genre);
+        std::vector<Album*> library;
         Album *nil;
-        std::vector<Album> library;
 };
 #endif // TRUEPATRICIANMUSIC_H
