@@ -1,3 +1,5 @@
+// THIS IS THE FILE INCLUDES ALL FUNCTION DEFINITIONS
+
 #include "TruePatricianMusic.h"
 #include <string>
 #include <iostream>
@@ -8,13 +10,21 @@
 
 using namespace std;
 
+/* this is a constructor for the Genre class. The Genre class is what contains the vector to store the pointers to each
+linked list. The pre-conditions are none, but it creates a nil pointer to a new Album make sure no pointers overlap.
+there are no returning conditions. */
 Genre::Genre(){
     nil = new Album();
 }
 
+/* virtual circular set up. It does not return and does not require any preconditions. You do not need to set up this, simply leave be
+so the program know what it is*/
 Genre::~Genre(){
 }
 
+/* this initializes the library. if we use a different file for the initial library, change the hardcoded file name in the main.cpp
+the preconditions are the filename, it must be a string. This will read in the tile, and put every album into a linked list and into
+the appropriate place on the vector of pointers. Each place in the vector is associated to a different genre. There are no post conditions*/
 void Genre::initializeLibrary(std::string filename){
     ifstream infile;
     infile.open(filename.c_str());
@@ -60,6 +70,11 @@ void Genre::initializeLibrary(std::string filename){
     });*/
 }
 
+/* This adds a new album into the system. If the genre is not already in the system, it expands the vector containing all the
+heads for each genre with the new one. If the genre already exists, it will find that genre in the vector, and scroll throguh
+the linked list until it finds the appropriate placement based on its rating. The albums are sorted hightest rating to lowest
+There is no post condition, but the pre condition is the artist, album, rating,and genre, in that order. The artist, album,
+and genre must be strings, where the rating must be an int. */
 void Genre::addAlbumNode(std::string artist, std::string album, int rating, std::string genre){
 	Album *newOne = new Album(artist,album,rating,genre);
 	int root=0;
@@ -119,6 +134,9 @@ void Genre::addAlbumNode(std::string artist, std::string album, int rating, std:
     }
 }
 
+/* Returns the index of each head in the vector. It will find which head is the linked list for that genre, and return what
+index it is at. The precondition is the genre of the album, and the return is an int, which we use to find and replace
+the values here if neeeded */
 int Genre::getRoot(std::string genre){
     for(int i=0; i<library.size(); i++){
         if(library[i]->genre == genre)
@@ -126,6 +144,9 @@ int Genre::getRoot(std::string genre){
     }
 }
 
+/* This prints the library. It is the recursive version of the function that goes through the linked list and prints
+each album that it contains. its precondition is the node in the linked list and its return is none, but is does
+cout the information of the album*/
 void Genre::printLibrary(Album *node){
     while(node!=nil){
         cout<<node->genre<<": "<<node->album<<" by "<<node->band<<" rated "<<node->rating<<endl;
@@ -133,12 +154,15 @@ void Genre::printLibrary(Album *node){
     }
 }
 
+/* This is the caller to print the library. no preconditions and no post conditions, but what is does is go throguh the vector
+of genres and calls the print library recursive for each head of each genre in the vector */
 void Genre::printLibrary(){
     for(int i=0; i<library.size(); i++){
         printLibrary(library[i]);
     }
 }
 
+/* This prints the genres in the vector. no post and no pre conditions exist, it simply couts the genres*/
 void Genre::printGenres(){
     cout<<"Genres currently in the /mu/ library: ";
     for(int i=0; i<library.size(); i++){
@@ -150,6 +174,9 @@ void Genre::printGenres(){
     cout<<endl;
 }
 
+/* A compare function. Because case sensitive is a pain in the ass and we do not want duplicates in the library,
+we added this so you can ignore the case sensitivity and find the album, even if you accidently make "the" instead
+of "The". The pre conditions are two string, of each album. The return is boolean, true or false, if the titles are the same.*/
 bool Genre::compare(std::string one, std::string two){
     int same=0;
     if(one.length()==two.length()){
@@ -168,6 +195,9 @@ bool Genre::compare(std::string one, std::string two){
     return false;
 }
 
+/* function to rate the users taste. The return is the int value of the album, which is its pitchfork rating. The precondition is
+the string of the album. It finds the album in the library and returns its rating. if it is not found, then
+it will ask the user to include all of the information by calling a new function */
 int Genre::rateMyTaste(std::string album){
     Album *albumFind;
     int rate;
@@ -185,6 +215,9 @@ int Genre::rateMyTaste(std::string album){
     return rateMyTaste(notInLibrary());
 }
 
+/* as afore mentioned, this is the function that will call if the album was not found. There is no precondition, but it returns the string
+of the album. This is because if the album is not found in rate my taste function, it is called again with the return string of this
+album so the album will be found and its rating will be returned */
 std::string Genre::notInLibrary(){
     string artist, album, genre, rate;
     int rating=0;
