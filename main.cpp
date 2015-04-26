@@ -1,3 +1,5 @@
+// THIS IS THE DRIVER FUNCTION
+
 #include <iostream>
 #include "TruePatricianMusic.h"
 using namespace std;
@@ -44,8 +46,27 @@ int main()
 
         }
         else if(option=="2"){
+            cout<<"Cool beans. What album you want to get something similar to??"<<endl;
+            string album;
+            getline(cin,album);
+            muLibrary.recommend(album);
         }
-        if(option=="3"){
+        else if(option=="3"){
+            cout<<"Brilliant, we love getting you hooked on some sweet tunes!"<<endl;
+            muLibrary.printGenres();
+            string genre;
+            getline(cin,genre);
+            muLibrary.genreRecommend(genre);
+        }
+        else if(option=="4"){
+            cout<<"Hey, don't worry 'lil buddy / 'lil gal / 'lil friend! We got you covered! :D!"<<endl;
+            muLibrary.patricianize();
+        }
+        else if(option=="5"){
+            cout<<"Welly well, we have a nifty algo for that!"<<endl;
+            muLibrary.GOAT();
+        }
+        if(option=="6"){
             string artist, album, genre, rating;
             int ratingInt;
             cout<<"Okay. Cool. Well first off, what band/artist are you adding?"<<endl;
@@ -61,14 +82,8 @@ int main()
             muLibrary.addAlbumNode(artist,album,ratingInt,genre);
             cout<<"k"<<endl;
         }
-        else if(option=="4"){
-            muLibrary.printLibrary();
-        }
-        else if(option=="5"){
-        }
-        else if(option=="6"){
-        }
         else if(option=="7"){
+            muLibrary.printLibrary();
         }
     }
     cout<<"lol"<<endl;
@@ -78,7 +93,10 @@ void mainMenu(){
     cout<<"======/mu/ menu lol======="<<endl;
     cout<<"1. R8 my taste!"<<endl;
     cout<<"2. Recommend me some tunes pls"<<endl;
-    cout<<"3. Add music to the library"<<endl;
-    cout<<"4. View the /mu/ library"<<endl;
-    cout<<"5. GET OFF THE BOARD"<<endl;
+    cout<<"3. Give me everything on a genre!"<<endl;
+    cout<<"4. I want to be patrician too! :c"<<endl;
+    cout<<"5. Who are, without dispute, the greatest of all time?"<<endl;
+    cout<<"6. Add music to the library"<<endl;
+    cout<<"7. View the /mu/ library"<<endl;
+    cout<<"8. GET OFF THE BOARD"<<endl;
 }

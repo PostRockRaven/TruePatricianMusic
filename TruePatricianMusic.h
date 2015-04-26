@@ -1,3 +1,5 @@
+// THIS FILE INLCUDES THE CLASS
+
 #ifndef TRUEPATRICIANMUSIC_H
 #define TRUEPATRICIANMUSIC_H
 
@@ -9,6 +11,8 @@ struct Album{
     std::string album;
     std::string genre;
     int rating;
+
+    int score;
 
     Album *next = NULL;
     Album *previous = NULL;
@@ -28,16 +32,21 @@ class Genre{
         ~Genre();
         Genre();
         void initializeLibrary(std::string);
+        void recommend(std::string);
+        Album *searchLibrary(std::string);
         void printLibrary();
         void addAlbumNode(std::string artist, std::string album, int rating, std::string genre);
         void printGenres();
+        void genreRecommend(std::string genre);
+        void patricianize();
+        void GOAT();
         bool compare(std::string one, std::string two);
         int rateMyTaste(std::string album);
+        int getRoot(std::string genre);
         std::string notInLibrary();
     protected:
     private:
         void printLibrary(Album *node);
-        int getRoot(std::string genre);
         std::vector<Album*> library;
         Album *nil;
 };

@@ -58,6 +58,7 @@ void Genre::initializeLibrary(std::string filename){
                 newOne->next=nil;
                 newOne->previous=nil;
                 library.push_back(newOne);
+                newOne->score=0;
             }
             if(entries>1){
                 addAlbumNode(artist,album,rating,genre);
@@ -77,6 +78,7 @@ There is no post condition, but the pre condition is the artist, album, rating,a
 and genre must be strings, where the rating must be an int. */
 void Genre::addAlbumNode(std::string artist, std::string album, int rating, std::string genre){
 	Album *newOne = new Album(artist,album,rating,genre);
+	newOne->score=0;
 	int root=0;
 	Album *temp;
 	Album *temp2;
@@ -93,7 +95,7 @@ void Genre::addAlbumNode(std::string artist, std::string album, int rating, std:
 	}
     root=getRoot(genre);
     temp=library[root];
-    if(rating>(library[root]->rating)){
+    if(rating>=(library[root]->rating)){
         newOne->band=library[root]->band;
         newOne->album=library[root]->album;
         newOne->rating=library[root]->rating;
@@ -233,4 +235,153 @@ std::string Genre::notInLibrary(){
     getline(cin,genre);
     addAlbumNode(artist,album,rating,genre);
     return album;
+}
+
+Album* Genre::searchLibrary(string album){
+    Album *node;
+    for(int i=0; i<library.size(); i++){
+        node = library[i];
+        while(node!=nil){
+            if(compare(album,node->album)){
+                return node;
+            }
+            else{
+                node=node->next;
+            }
+        }
+    }
+    return nil;
+}
+
+/*no post conidition but it takes the album as a pre condition. it will cout the album that has the next highest score to the album.
+if the album has the highest score, it does the next lowest*/
+void Genre::recommend(string album){
+    Album *node = searchLibrary(album);
+    Album *temp;
+    if(node==nil){
+        cout<<"Silly goose we are! We don't have this. One second..."<<endl;
+        recommend(notInLibrary());
+        return;
+    }
+    else{
+        temp = node;
+        cout<<"Ahh yes! Here is an album we recommend if you like this album."<<endl;
+        node=node->previous;
+        while(node!=nil){
+            if(node->band!=temp->band){
+                cout<<"The album "<<node->album<<" by "<<node->band<<" is very good and well suited to your taste!"<<endl;
+                return;
+            }
+            node=node->previous;
+        }
+        node = temp;
+        node=node->next;
+        while(node!=nil){
+            if(node->band!=temp->band){
+                cout<<"The album "<<node->album<<" by "<<node->band<<" is very good and well suited to your taste!"<<endl;
+                return;
+            }
+            node=node->next;
+        }
+        cout<<"Oh you sure are a hipster! We cannot seem to find anything close to that. Please try the Genre Recommend instead!"<<endl;
+    }
+}
+
+/* no post condition, but its pre condition is the genre. It couts all the albums of that genre. */
+void Genre::genreRecommend(std::string genre){
+    Album *node;
+    for(int i=0; i<library.size(); i++){
+        node=library[i];
+        if(compare(genre,node->genre)){
+            while(node!=nil){
+                cout<<node->album<<" by "<<node->band<<endl;
+                node=node->next;
+            }
+            return;
+        }
+    }
+    cout<<"We don't have this genre actually... lmao so you can go back to the main menu and add some albums of that genre if you'd like!"<<endl;
+    return;
+}
+
+/* no pre or post conditions. it couts the 100 scored albums in the library. */
+void Genre::patricianize(){
+    Album *node;
+    cout<<"All of these albums are true patrician. Rated 100 outta 100 by my Anthony Fandago himself!"<<endl;
+    for(int i=0; i<library.size(); i++){
+        node=library[i];
+        while(node!=nil){
+            if(node->rating==100){
+                cout<<node->album<<" by "<<node->band<<endl;
+            }
+            node=node->next;
+        }
+    }
+    return;
+}
+
+/* This function assigns score to each band by averaging album scores. There is no pre or post conditions. It
+will cout the top score band for each genre */
+void Genre::GOAT(){
+    string lastCompared;
+    bool done;
+    int total, albums;
+    Album *node, *temp;
+    for(int i=0; i<library.size(); i++){
+        done=false;
+        node=library[i];
+        temp=node;
+        while(done==false){
+            albums=0;
+            total=0;
+            lastCompared=temp->band;
+            node=temp;
+            while(node!=nil){
+                if(lastCompared==node->band){
+                    total+=node->rating;
+                    albums++;
+                }
+                node=node->next;
+            }
+            node=temp;
+            total=total/albums;
+            while(node!=nil){
+                if(lastCompared==node->band){
+                    node->score = total;
+                }
+                if(node->next==nil){
+                    if(node->band==lastCompared){
+                        done=true;
+                        break;
+                    }
+                }
+                node=node->next;
+            }
+            if(done==true){
+                break;
+            }
+            node=temp;
+            while(node!=nil){
+                if(node->band!=lastCompared && node->score==0){
+                    temp=node;
+                    break;
+                }
+                node=node->next;
+            }
+        }
+    }
+    for(int i=0; i<library.size(); i++){
+        Album *goat;
+        cout<<"Top Patrician for "<<library[i]->genre<<" is: ";
+        node=library[i];
+        goat=node;
+        while(node!=nil){
+            if(node->score>goat->score){
+                goat=node;
+            }
+            node=node->next;
+        }
+        cout<<goat->band<<" with a score of "<<goat->score<<endl;
+    }
+    return;
 }
