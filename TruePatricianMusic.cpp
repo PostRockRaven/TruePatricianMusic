@@ -10,6 +10,9 @@
 
 using namespace std;
 
+bool goodbuilt = false;
+bool badbuilt = false;
+
 /* this is a constructor for the Genre class. The Genre class is what contains the vector to store the pointers to each
 linked list. The pre-conditions are none, but it creates a nil pointer to a new Album make sure no pointers overlap.
 there are no returning conditions. */
@@ -384,4 +387,107 @@ void Genre::GOAT(){
         cout<<goat->band<<" with a score of "<<goat->score<<endl;
     }
     return;
+}
+
+std::string Genre::randomSuggestion()
+{
+    string random;
+
+    int anum = rand()%library.size();
+
+    vector<Album*> rtemp;
+
+    Album* temp = library[anum];
+
+    while(temp != nil)
+    {
+        rtemp.push_back(temp);
+        temp = temp->next;
+    }
+
+    int newnum = rand()%rtemp.size();
+
+    random = rtemp[newnum]->album;
+    random +=" by ";
+    random += rtemp[newnum]->band;
+
+    return random;
+}
+
+std::string Genre::badSuggestion()
+{
+    if(!badbuilt)
+    {
+        Album* temp;
+
+        for(int i = 0; i < library.size(); i++)
+        {
+            temp = library[i];
+
+            while(temp != nil)
+            {
+                if(temp->rating <= 85)
+                {
+                    bad.push_back(temp);
+                    temp = temp->next;
+                }
+                else
+                {
+                    temp = temp->next;
+                }
+            }
+        }
+
+        badbuilt = true;
+    }
+
+
+    int anum = rand()%bad.size()-1;
+
+    string shite = "";
+
+    shite += bad[anum]->album;
+    shite += " by ";
+    shite += bad[anum]->band;
+
+    return shite;
+
+}
+
+std::string Genre::patricianSuggestion()
+{
+    if(!goodbuilt)
+    {
+        Album* temp;
+
+        for(int i = 0; i < library.size(); i++)
+        {
+            temp = library[i];
+
+            while(temp != nil)
+            {
+                if(temp->rating > 85)
+                {
+                    good.push_back(temp);
+                    temp = temp->next;
+                }
+                else
+                {
+                    temp = temp->next;
+                }
+            }
+        }
+
+        goodbuilt = true;
+    }
+
+    int anum = rand()%good.size();
+
+    string godly = "";
+
+    godly += good[anum]->album;
+    godly += " by ";
+    godly += good[anum]->band;
+
+    return godly;
 }
